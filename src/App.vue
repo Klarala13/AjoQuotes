@@ -17,7 +17,6 @@
 </template>
 
 <script>
-//
 import Grid from "./components/Grid.vue";
 import NewQuote from "./components/NewQuote.vue";
 import Header from "./components/Header.vue";
@@ -31,7 +30,7 @@ export default {
         "Compré apio en la frutería (opio no tenían) tuve que tomarme un pepito de ternera (de ternura no quedaban ya). Ahora busco mojama sin parar porque dicen que sabe a-mar.",
         "Compromiso: primera persona del singular del presente de indicativo del verbo comprar miso."
       ],
-      maxQuotes: 5
+      maxQuotes: 20
     };
   },
   methods: {
@@ -40,16 +39,26 @@ export default {
         return alert("Please delete some Quotes first!");
       }
       this.quotes.push(quote);
+      localStorage.setItem("quotes", JSON.stringify(this.quotes));
     },
     deleteQuote(index) {
       this.quotes.splice(index, 1);
-      console.log(index);
+      localStorage.setItem("quotes", JSON.stringify(this.quotes));
     }
   },
   components: {
     appQuoteGrid: Grid,
     newQuote: NewQuote,
     appHeader: Header
+  },
+  created: function() {
+    let ls = JSON.parse(localStorage.getItem("quotes"));
+    console.log(ls);
+    if (ls === null) {
+      return quotes;
+    } else {
+      this.quotes = ls;
+    }
   }
 };
 </script>
