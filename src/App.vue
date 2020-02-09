@@ -8,7 +8,9 @@
     ></app-quote-grid>
     <div class="row">
       <div class="col-sm-12 text-center">
-        <div class="alert alert-info">Info: Click on a Quote to delete it!</div>
+        <div class="alert alert-success">
+          Info: Click on a Quote to delete it!
+        </div>
       </div>
     </div>
   </div>
@@ -25,15 +27,18 @@ export default {
     return {
       quotes: [
         "La poesía es un arma cargada de futuro. La micropoesía es un arma cargada de pasado imperfecto. (Muy imperfecto).",
-        "Siempre siempre siempre siempre siempre siempre siempre siempre siempre siempre y aún así me parece poco.",
+        "Te adoraré siempre y me importas un pimiento. Todavía no riman, pero ya rimarán con el tiempo.",
         "Compré apio en la frutería (opio no tenían) tuve que tomarme un pepito de ternera (de ternura no quedaban ya). Ahora busco mojama sin parar porque dicen que sabe a-mar.",
         "Compromiso: primera persona del singular del presente de indicativo del verbo comprar miso."
       ],
-      maxQuotes: 20
+      maxQuotes: 5
     };
   },
   methods: {
     newQuote(quote) {
+      if (this.quotes.length >= this.maxQuotes) {
+        return alert("Please delete some Quotes first!");
+      }
       this.quotes.push(quote);
     },
     deleteQuote(index) {
