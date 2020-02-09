@@ -53,7 +53,7 @@ export default {
   },
   created: function() {
     let ls = JSON.parse(localStorage.getItem("quotes"));
-    console.log(ls);
+    // console.log(ls);
     if (ls === null) {
       return quotes;
     } else {

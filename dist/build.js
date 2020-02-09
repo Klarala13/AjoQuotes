@@ -12267,7 +12267,7 @@ module.exports = __vue_exports__
   },
   created: function () {
     let ls = JSON.parse(localStorage.getItem("quotes"));
-    console.log(ls);
+    // console.log(ls);
     if (ls === null) {
       return quotes;
     } else {
@@ -12424,7 +12424,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, ".panel-body{font-family:Sriracha,cursive;font-size:20px;color:#2f4f4f!important;background-color:#d3d3d3}.quote{cursor:pointer}.quote:hover{background-color:#ffe2e2}.alert-success{color:#2f4f4f!important}.progress{height:30px}.progress-bar-danger{color:#fff!important;padding-left:3%;border:3px dotted #fff;font-size:16px}.btn:hover{color:#d3d3d3;background-color:#2f4f4f}#style-13::-webkit-scrollbar-thumb{border-radius:10px;background-color:#d62929;background-image:-webkit-linear-gradient(90deg,transparent,rgba(0,0,0,.4) 50%,transparent,transparent)}", ""]);
+exports.push([module.i, ".panel-body{font-family:Sriracha,cursive;font-size:20px;color:#2f4f4f!important;background-color:#d3d3d3}.quote{cursor:pointer}.quote:hover{background-color:#ffe2e2}.alert-success{color:#2f4f4f!important}.progress{height:30px}.progress-bar-danger{color:#fff!important;padding-left:3%;border:3px dotted #fff;font-size:16px}.btn:hover{color:#d3d3d3;background-color:#2f4f4f}", ""]);
 
 // exports
 
