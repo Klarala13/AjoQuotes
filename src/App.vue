@@ -1,25 +1,14 @@
 <template>
-  <div class="container">
-    <app-quote-grid :quotes="quotes"></app-quote-grid>
-  </div>
+    <div class="container">
+    
+    </div>
 </template>
 
 <script>
-import Grid from "./components/Grid.vue";
-export default {
-  data: function() {
-    return {
-      quotes: [
-        "La poesía es un arma cargada de futuro. La micropoesía es un arma cargada de pasado imperfecto. (Muy imperfecto)."
-      ],
-      maxQuotes: 10
-    };
-  },
-  components: {
-    appQuoteGrid: Grid
-  }
-};
+    export default {
+        
+    }
 </script>
+
 <style>
-@import "./css/style.css";
 </style>
