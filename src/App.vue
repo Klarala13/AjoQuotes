@@ -6,9 +6,7 @@
 </template>
 
 <script>
-//Siempre siempre siempre siempre siempre siempre siempre siempre siempre siempre y aún así me parece poco.
-//La poesía es un arma cargada de futuro. La micropoesía es un arma cargada de pasado imperfecto. (Muy imperfecto).
-
+//
 import Grid from "./components/Grid.vue";
 import NewQuote from "./components/NewQuote.vue";
 
@@ -16,7 +14,8 @@ export default {
   data: function() {
     return {
       quotes: [
-        "La poesía es un arma cargada de futuro. La micropoesía es un arma cargada de pasado imperfecto. (Muy imperfecto)."
+        "La poesía es un arma cargada de futuro. La micropoesía es un arma cargada de pasado imperfecto. (Muy imperfecto).",
+        "Siempre siempre siempre siempre siempre siempre siempre siempre siempre siempre y aún así me parece poco."
       ],
       maxQuotes: 10
     };
