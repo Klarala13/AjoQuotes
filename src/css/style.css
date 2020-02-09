@@ -1,0 +1,11 @@
+.panel-body {
+  font-family: "Arizonia", cursive;
+  font-size: 24px;
+  color: darkslategray;
+}
+.quote {
+  cursor: pointer;
+}
+.quote:hover {
+  background-color: #ffe2e2;
+}
