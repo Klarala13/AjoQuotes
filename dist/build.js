@@ -12630,7 +12630,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(5)
 
 /* template */
-var __vue_template__ = __webpack_require__(18)
+var __vue_template__ = __webpack_require__(16)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -12688,7 +12688,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(7)
 
 /* template */
-var __vue_template__ = __webpack_require__(16)
+var __vue_template__ = __webpack_require__(17)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -12717,7 +12717,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(8)
 
 /* template */
-var __vue_template__ = __webpack_require__(17)
+var __vue_template__ = __webpack_require__(18)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -12737,6 +12737,24 @@ module.exports = __vue_exports__
 
 /***/ },
 /* 16 */
+/***/ function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, _vm._l((_vm.quotes), function(quote, index) {
+    return _c('app-quote', {
+      nativeOn: {
+        "click": function($event) {
+          return _vm.deleteQuote(index)
+        }
+      }
+    }, [_vm._v(_vm._s(quote))])
+  }), 1)
+},staticRenderFns: []}
+
+/***/ },
+/* 17 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -12778,7 +12796,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 17 */
+/* 18 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -12789,24 +12807,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "panel-body quote"
   }, [_vm._t("default")], 2)])])
-},staticRenderFns: []}
-
-/***/ },
-/* 18 */
-/***/ function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row"
-  }, _vm._l((_vm.quotes), function(quote, index) {
-    return _c('app-quote', {
-      nativeOn: {
-        "click": function($event) {
-          return _vm.deleteQuote(index)
-        }
-      }
-    }, [_vm._v(_vm._s(quote))])
-  }), 1)
 },staticRenderFns: []}
 
 /***/ },
@@ -13108,8 +13108,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-764d87ce!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./App.vue", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-764d87ce!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./App.vue");
+		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-8027e3d6!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./App.vue", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-8027e3d6!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./App.vue");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
