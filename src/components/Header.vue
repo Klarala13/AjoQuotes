@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-12">
       <h3>Quotes Added</h3>
-      <p class="text-center">Las citas que ves son de la maravillosa Ajo Micropoetisa. <a href="https://twitter.com/ajomicropoetisa?lang=es" target="blank">Aquí </a> puedes ver algunos de sus trabajos.</p>
+      <p class="text-center">Las citas que ves son de la maravillosa Ajo Micropoetisa. <strong> <a href="https://twitter.com/ajomicropoetisa?lang=es" target="blank">Aquí </a> </strong> ver algunos de sus trabajos.</p>
       <div class="progress">
         <div class="progress">
           <div
