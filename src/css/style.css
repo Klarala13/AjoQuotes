@@ -26,3 +26,11 @@
   color: lightgray;
   background-color: darkslategray;
 }
+a {
+  color: darkslategray;
+ 
+}
+a:hover {
+  text-decoration: none;
+  color: #d9534f;
+}
