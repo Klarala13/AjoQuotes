@@ -1,12 +1,12 @@
 <template>
   <div class="row">
-    <!-- Even though the event happens on the HTML rendered in Quote.vue, we want it to be registered
-    here (<app-quote>). That's why we add the "native" modifier -->
-    <app-quote
-      v-for="(quote, index) in quotes"
-      @click.native="deleteQuote(index)"
-      >{{ quote }}</app-quote
-    >
+    <div class="col-12">
+      <app-quote
+        v-for="(quote, index) in quotes" :key="index"
+        @click.native="deleteQuote(index)"
+        >{{ quote }}
+      </app-quote>
+    </div>
   </div>
 </template>
 
